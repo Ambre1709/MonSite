@@ -58,4 +58,13 @@ body{
 section:nth-child(even){
     background-color: #215d62;
 }
-
+/* -----------------------------------------------------------------BUTTON*/
+#scrollToTopBtn {
+    color: #f6b20b;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-right: 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+  }

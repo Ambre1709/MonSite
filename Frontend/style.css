@@ -13,7 +13,8 @@ body{
     padding: 20px 0;
     position: fixed;
     width: 100%;
-    border-bottom: 2px white solid;
+    border-bottom: 3px #f6b20b solid;
+    z-index: 1001;
 }
 .menu ul{
     margin: 0;
@@ -50,13 +51,220 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+section:nth-child(even){
+    background-color: #215d62;
+}
+.section h1{
     font-size: 2em;
     text-transform: uppercase;
     font-weight: 700;
     color: #f6b20b;
 }
-section:nth-child(even){
+/* -----------------------------------------------------------------SECTION CONTACT*/
+#contact{
+    display: flex;
+    flex-direction: column;
+}
+.container-form{
+position: relative;
+min-height: 550px;
+min-width: 1100px;
+display: flex;
+z-index: 1000;
+margin: 40px;
+}
+/* ---------------------------PARTIE INFO*/
+.container-form .contactInfo{
+    position: absolute;
+    top: 40px;
+    height: calc(100% - 315px);
+    background: #f6b20b;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.20);
+}
+.container-form .contactInfo h2{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+}
+.container-form .contactInfo ul.info{
+    position: relative;
+    margin: 20px 0;
+    padding-top: 5%;
+}
+.container-form .contactInfo ul.info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+}
+/*icon contact info*/
+.container-form .contactInfo ul.info li span:nth-child(1){
+    margin-right: 15px;
+    font-size: 1.5em;
+    color: white;
+}
+/*text contact info*/
+.container-form .contactInfo ul.info li span:nth-child(2){
+    font-size: 1em;
+    color: white;
+}
+/*social icon contact info*/
+.container-form .contactInfo ul.contact_link{
+    position: relative;
+    display:flex;
+}
+.container-form .contactInfo ul.contact_link li{
+    list-style: none;
+    margin-right: 15px;
+}
+.container-form .contactInfo ul.contact_link li a i{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+/* ---------------------------PARTIE FORMULAIRE*/
+.container-form .contactForm{
+    position: relative;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: white;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.25);
+}
+.container-form .contactForm h2{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #404040;
+}
+.container-form .contactForm .formBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.container-form .contactForm .formBox .inputBox{
+    position: relative;
+    margin-bottom: 35px;
+}
+.container-form .contactForm .formBox .inputBox.w50{
+    width: 47%;
+}
+.container-form .contactForm .formBox .inputBox.w100{
+    width: 100%;
+}
+.container-form .contactForm .formBox .inputBox input,
+.container-form .contactForm .formBox .inputBox textarea{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #404040;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #215d62;
+}
+.container-form .contactForm .formBox .inputBox textarea{
+    height: 120px;
+}
+.container-form .contactForm .formBox .inputBox span{
+    position: absolute;
+    left: 0;
+    font-size: 1em;
+    padding: 5px 0;
+    pointer-events: none;
+    font-weight: 300;
+    transition: 0.3s;
+}
+.container-form .contactForm .formBox .inputBox input:focus ~ span,
+.container-form .contactForm .formBox .inputBox input:valid ~ span,
+.container-form .contactForm .formBox .inputBox textarea:focus ~ span,
+.container-form .contactForm .formBox .inputBox textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #215d62;
+    font-weight: 500;
+}
+.container-form .contactForm .formBox .inputBox input[type="submit"]{
+    position: relative;
+    cursor: pointer;
     background-color: #215d62;
+    color: white;
+    border: none;
+    max-width: 150px;
+    padding: 15px;
+}
+.container-form .contactForm .formBox .inputBox input[type="submit"]:hover{
+    background: #1a757d;
+}
+/* -----------------------------------------------------------------RESPONSIVE SECTION CONTACT*/
+@media screen and (max-width: 1500px) {
+    .container-form{
+        width: 90%;
+        min-width: auto;
+    }    
+    .container-form .contactInfo{
+        top: 0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+    }
+    .container-form .contactForm{
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+    }
+}
+@media screen and (max-width: 1000px){
+    .container-form{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 20px;
+    }
+    .container-form .contactInfo{
+        width: 90%;
+        height: auto;
+        flex-direction: row;
+    }
+    .container-form .contactForm{
+        width: 90%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 600px){
+    .container-form{
+        max-width: 70%;
+    }
+    .container-form .contactForm .formBox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-form .contactForm .formBox .inputBox.w50{
+        width: 100%;
+    }
+    .container-form .contactInfo{
+        flex-direction: column;
+    }
 }
 /* -----------------------------------------------------------------BUTTON*/
 #scrollToTopBtn {

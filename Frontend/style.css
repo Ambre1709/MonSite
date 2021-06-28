@@ -9,16 +9,16 @@ body{
 }
 /* -----------------------------------------------------------------NAV BAR*/
 .menu{
-    background: #215d62;
-    padding: 20px 0;
-    position: fixed;
+    background: #214d62;
     width: 100%;
+    height: 60px;
     border-bottom: 3px #f6b20b solid;
     z-index: 1001;
+    padding-top: 20px;
 }
 .menu ul{
-    margin: 0;
-    padding: 0;
+    float: right;
+    margin-right: 20px;
     text-align: center;
 }
 .menu ul li{
@@ -40,11 +40,75 @@ body{
     background: #f6b20b;
     border-radius: 40px;
 }
-.menu ul li:hover a{
+.menu ul a:hover{
     background: #f6b20b;
     border-radius: 40px;
 } 
-
+label.logo{
+    color: white;
+    font-size: 2em;
+    margin: 0 100px;
+    font-weight: bold;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  /*Ex: tablette*/
+@media screen and (max-width: 1000px){
+    .line{
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 5px;
+    }
+    .hamburger{
+        cursor: pointer;
+    }
+    .checkbtn{
+        display: block;
+      }
+    .menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        margin-top: 20px;
+        padding-top: 50px;
+        height: 100vh;
+        background: #214d62;
+        left: -100%;
+        transition: all 0.7s;
+        border-top: 3px #f6b20b solid;
+    }
+    .menu ul li{
+        margin-top: 40px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .menu{
+          position: fixed;
+    }
+}
+/*Ex: Iphone 5*/
+@media screen and (max-width: 350px){
+    label.logo{
+        margin: 0 20px;
+      }
+      .menu ul li{
+        margin-top: 20px;
+    }
+}
 /* -----------------------------------------------------------------SECTION*/
 .section{
     min-height: 100vh;
@@ -53,7 +117,7 @@ body{
     align-items: center;
 }
 section:nth-child(even){
-    background-color: #215d62;
+    background-color: #214d62;
 }
 .section h1{
     font-size: 2em;
@@ -62,9 +126,28 @@ section:nth-child(even){
     color: #f6b20b;
 }
 /* -----------------------------------------------------------------SECTION CONTACT*/
+#accueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* -----------------------------------------------------------------SECTION CONTACT*/
+#aPropos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* -----------------------------------------------------------------SECTION CONTACT*/
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* -----------------------------------------------------------------SECTION CONTACT*/
 #contact{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .container-form{
 position: relative;
@@ -175,7 +258,7 @@ margin: 40px;
     color: #404040;
     border: none;
     outline: none;
-    border-bottom: 1px solid #215d62;
+    border-bottom: 1px solid #214d62;
 }
 .container-form .contactForm .formBox .inputBox textarea{
     height: 120px;
@@ -184,6 +267,7 @@ margin: 40px;
     position: absolute;
     left: 0;
     font-size: 1em;
+    color: #404040;
     padding: 5px 0;
     pointer-events: none;
     font-weight: 300;
@@ -197,20 +281,20 @@ margin: 40px;
     font-size: 0.8em;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #215d62;
+    color: #214d62;
     font-weight: 500;
 }
 .container-form .contactForm .formBox .inputBox input[type="submit"]{
     position: relative;
     cursor: pointer;
-    background-color: #215d62;
+    background-color: #214d62;
     color: white;
     border: none;
     max-width: 150px;
     padding: 15px;
 }
 .container-form .contactForm .formBox .inputBox input[type="submit"]:hover{
-    background: #1a757d;
+    background: #3982a3;
 }
 /* -----------------------------------------------------------------RESPONSIVE SECTION CONTACT*/
 @media screen and (max-width: 1500px) {
@@ -266,13 +350,34 @@ margin: 40px;
         flex-direction: column;
     }
 }
+@media screen and (max-width: 350px){
+    .container-form .contactInfo{
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
 /* -----------------------------------------------------------------BUTTON*/
 #scrollToTopBtn {
     color: #f6b20b;
     cursor: pointer;
-    font-size: 1.5em;
+    font-size: 2em;
     margin-right: 20px;
     padding: 20px 0;
-    display: flex;
-    justify-content: flex-end;
+    margin-left: auto;
   }
+#scrollToTopBtn:hover{
+    color: #fff;
+}
+#down i{
+    color: #f6b20b;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+#up i{
+    color: #f6b20b;
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-top: 20px;
+}

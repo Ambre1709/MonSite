@@ -96,6 +96,7 @@ label.logo{
     #check:checked ~ ul{
         left: 0;
     }
+/* -----------------------------------------------------------------erreur: FIXED déplace mon H1 en top*/
     .menu{
           position: fixed;
     }

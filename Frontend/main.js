@@ -11,7 +11,7 @@ behavior: "smooth"
 scrollToTopBtn.addEventListener("click", scrollToTop)
 
 // ---------------bar de nav, on click
-$(document).on('click', 'ul li', function(){
+$(document).on('click', 'ul a', function(){
     $(this).addClass('active').siblings().removeClass('active')
 })
 

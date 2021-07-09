@@ -38,7 +38,7 @@ body{
 #aPropos{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    min-height: 100vh;
 }
 .box{
     display: flex;
@@ -78,7 +78,39 @@ padding-top: 10px;
 #portfolio{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    min-height: 100vh;
+}
+.projets{
+    display: flex;
+    padding: 10px;
+}
+.projet_1, .projet_2{
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+}
+figure img {
+    display: block;
+}
+.projet_1 figure, .projet_2 figure{
+    background: black;
+}
+.projet_1 figure img, .projet_2 figure img{
+    opacity: 1;
+}
+.projet_1 figure:hover img, .projet_2 figure:hover img{
+    opacity: .5;
+}
+.projet_1 img, .projet_2 img{
+    max-width: 40vw;
+}
+@media screen and (max-width: 1024px) {
+    .projets{
+        flex-direction: column;
+    }
+    .projet_1 img, .projet_2 img{
+        max-width: 80vw;
+    }
 }
 /* -----------------------------------------------------------------FOOTER*/
 footer{

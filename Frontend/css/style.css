@@ -106,6 +106,12 @@ padding-top: 10px;
 img:hover + .projets_text {
     opacity: 1;
 }
+.projets_text h2{
+    margin-bottom: 20px;
+}
+.projets_text h4{
+    margin-bottom: 10px;
+}
 .projet img{
     max-width: 40vw;
 }
@@ -135,6 +141,16 @@ img:hover + .projets_text {
         margin-top: -5px;
         background: #214d62;
         color: #fff;
+        padding: 5px 0;
+    }
+    .trois{
+        background: #00734c;
+    }
+    .deux{
+        background: #f3976c;
+    }
+    .un{
+        background: #fe6347;
     }
     .projets a:hover{
         filter: brightness(100%);

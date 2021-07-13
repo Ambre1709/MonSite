@@ -97,7 +97,7 @@ padding-top: 10px;
     color: #fff;
     max-width: 40vw;
     position: relative;
-    margin-top: -50%;
+    margin-top: -72%;
     opacity: 0;
 }
 .projets_text:hover{
@@ -108,6 +108,7 @@ img:hover + .projets_text {
 }
 .projets_text h2{
     margin-bottom: 20px;
+    color: #f6b20b;
 }
 .projets_text h4{
     margin-bottom: 10px;
@@ -144,19 +145,22 @@ img:hover + .projets_text {
         padding: 5px 0;
         max-width: 80vw;
     }
-    .trois{
-        background: #00734c;
+    .un{
+        background: #fe6347;
     }
     .deux{
         background: #f3976c;
     }
-    .un{
-        background: #fe6347;
+    .trois{
+        background: #00734c;
     }
-    .six{
+    .quatre{
+        background: #e0b506;
+    }
+    .cinq{
         background: #1e293e;
     }
-    .sept{
+    .six{
         background: #36d8e1;
     }
     .projets a:hover{

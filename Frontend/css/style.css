@@ -142,6 +142,7 @@ img:hover + .projets_text {
         background: #214d62;
         color: #fff;
         padding: 5px 0;
+        max-width: 80vw;
     }
     .trois{
         background: #00734c;
@@ -152,8 +153,17 @@ img:hover + .projets_text {
     .un{
         background: #fe6347;
     }
+    .six{
+        background: #1e293e;
+    }
+    .sept{
+        background: #36d8e1;
+    }
     .projets a:hover{
         filter: brightness(100%);
+    }
+    .responsive_text_portfolio h2{
+        font-size: 1em;
     }
 }
 /* -----------------------------------------------------------------FOOTER*/

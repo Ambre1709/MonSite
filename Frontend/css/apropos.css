@@ -1,0 +1,39 @@
+#aPropos{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box h2{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.box_front, .box_back, .box_others{
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: #f6b20b solid 5px;
+    box-shadow: 0 20px 25px rgb(0 0 0 / 20%);
+}
+.icon{
+    width: 2.5em;
+}
+.smaller_icon{
+    width: 3.5em;
+}
+.icon_text{
+display: flex;
+align-items: center;
+padding-top: 10px;
+}
+.box span{
+    font-size: 1em;
+    font-weight: 550;
+    padding-left: 20px;
+}

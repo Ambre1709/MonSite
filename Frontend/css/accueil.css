@@ -12,6 +12,7 @@
     width: 80vw;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .accueil_part_bot{
     height: 10vh;
@@ -31,15 +32,14 @@
 .title_me{
     width: 100%;
     min-width: 255px;
-}
-.title_me{
-    width: 100%;
-    min-width: 255px;
+    display: flex;
+    flex-direction: row;
 }
 .infos_me{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 70px;
 }
 .image_me{
     width: 300px; 
@@ -78,7 +78,6 @@
 }
 /* --------------------img me + animation*/
 .me{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,7 +184,6 @@
     .infos_me{
         align-items: center;
         margin: auto;
-        padding: 20px;
         text-align: center;
     }
     .title_me h1{
@@ -203,8 +201,20 @@
     .title_me h1::after{
         display: none;
     }
-    .infos_me{
+    /*delete loader supergirl*/
+    .loader{
+        display: none;
+    }
+    .title_me h1{
         margin: 0;
-        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+    .me img{
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+    .slogan_me{
+        margin-bottom: 40px;
     }
 }

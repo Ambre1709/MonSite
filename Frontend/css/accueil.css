@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow-x: hidden;/*no scroll horizontal*/
 }
 .accueil_part_top{
     height: 10vh;
@@ -14,10 +15,52 @@
 .accueil_part_bot{
     height: 10vh;
 }
-#down i{
-    color: #f6b20b;
+.cv{
     cursor: pointer;
-    font-size: 1.5em;
+    background-color: #214d62;
+    color: white;
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    padding: 15px;
+}
+.cv:hover{
+    background-color: #3982a3;
+}
+.title_me{
+    margin-left: 80px;
+    width: 100%;
+    min-width: 255px;
+}
+.infos_me button{
+    margin-left: 80px;;
+}
+/*animation typing nom prénom*/
+.title_me h1{
+    color: #f6b20b;
+    position: relative;
+}
+.title_me h1::after{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     left: 0;
+     border-left: 2px solid #f6b20b ;
+     background-color:  #fff;
+     margin-left: 5px;
+     animation: typing 2s forwards,cursor 1s 2s infinite ;
+     -webkit-animation: typing 2s steps(15)  forwards,cursor 1s 2s infinite ;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+    }
+}
+/*clignotement cursor*/
+@keyframes cursor{
+    50%{opacity: 0;}
+    100%{opacity: 1;}
 }
 /* --------------------img me + animation*/
 .me{
@@ -94,4 +137,48 @@
 }
 .me .loader:hover + .wow{
     opacity: 1;
+}
+/*animation button scroll bot*/
+#down i{
+    color: #f6b20b;
+    cursor: pointer;
+    font-size: 1.5em;
+    animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+}
+@keyframes down {
+	0% {transform: translate(0);}
+	50% {transform: translateY(15px);}
+}
+@-webkit-keyframes down {
+	0% {transform: translate(0);}
+	50% {transform: translateY(15px);}
+}
+/*responsive*/
+@media screen and (max-width: 1024px){
+    .accueil_part_mid{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .infos_me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title_me{
+        margin-left: 0px;
+    }
+    .infos_me button{
+        margin-left: 0px;;
+    }
+    .me{
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+.test{
+    width: 300px; 
+    height: 300px;
 }

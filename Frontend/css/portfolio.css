@@ -48,6 +48,21 @@
 .responsive_text_portfolio{
     display: none;
 }
+.banniere_full_width h1{
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+.banniere_full_width{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; 
+    background-color: #214d62;
+    width: 100vw;
+    padding: 20px 0;
+    margin-top: 200px;
+}
+
+/*responsive*/
 @media screen and (max-width: 1024px) {
     .projets{
         flex-direction: column;
@@ -91,5 +106,25 @@
     }
     .six{
         background: #36d8e1;
+    }
+    .banniere_full_width{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 0;
+        margin-top: 100px;
+    }
+    .banniere_full_width img{
+    width: 30%;
+    min-width: 230px;
+    }
+    .ban_none{
+        display: none;
+    }
+    .ban_responsive{
+        display: flex;
+        justify-content: center;
+    }
+    .banniere_full_width h1 {
+        padding: 20px 0;
     }
 }

@@ -24,6 +24,7 @@ prends garde où tu mets les pieds
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/banniere.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <script src="https://kit.fontawesome.com/84c6d20721.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -86,28 +87,77 @@ prends garde où tu mets les pieds
         </div>
       </section>
 <!----------------------------------------------------A propos-->
-      <section id="aPropos" class="section">
-        <h1>A propos</h1>
+<section id="aPropos" class="section">
+<div class="banniere_full_width portfolio_ban">
+  <div  class="ban_none"><img src="images/banniere/banniere_propos_gauche.svg" alt="Accolade 3D" style="max-height: 265px;"></div>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <h1>À PROPOS<br/><br/>
+    </h1>
+  </div>
+  <div  class="ban_none"><img src="images/banniere/banniere_propos_droite.svg" alt="Accolade 3D" style="max-height: 265px;"></div>
+</div>
+        <div class="box_me">
+          <div class="box_me_description">
+            <h3>EN SAVOIR PLUS SUR MOI</h3>
+            <p>
+              À la suite de mon baccalauréat Design et Arts appliqués,<br/>
+              j'ai effectué une formation Developpeur Web (+2).
+            </p>
+            <p>
+              Ayant un goût prononcé pour le WebDesign, j'ai finalement choisis de me spécialiser côté front-end.
+            </p>
+            <p>
+              Je m'adapte aux besoins de l'entreprise grâce à ma capacité à apprendre en autodidacte et à ma curiosité.
+            </p>
+          </div>
+         
+          <!-- LOISIRS -->
+          <div class="box_loisirs">
+            <h3>LOISIRS & INTERETS</h3>
+            <div class="box_content_loisirs">
+              <div>
+                <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/picto_jeuxvideo.svg" alt="Logo HTML 5"><span>Jeux Vidéo</span></div>
+                <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/picto_animaux.svg" alt="Logo CSS 3"><span>Animaux</span></div>
+              </div>
+              <div>
+                <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/picto_photo.svg" alt="Logo Javascript"><span>Photo</span></div>
+                <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/picto_series.svg" alt="Logo Vue.js"><span>Séries<br/>Films</span></div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+        <h2 class="title_before_skills"> Retrouvez plus bas les compétences que j'ai pu développer à travers mes projets.</h2>
+        <!-- COMPETENCES -->
         <div class="box">
           <div class="box_front">
-            <h2>TECHNOLOGIES FRONT-END</h2>
-            <div class="icon_text"><img class="icon" src="images/html.png" alt="Logo HTML 5"><span>HTML 5</span></div>
-            <div class="icon_text"><img class="icon" src="images/css.png" alt="Logo CSS 3"><span>CSS 3</span></div>
-            <div class="icon_text"><img class="icon" src="images/javascript.png" alt="Logo Javascript"><span>Javascript</span></div>
-            <div class="icon_text"><img class="icon" src="images/vuejs.png" alt="Logo Vue.js"><span>Vue.js</span></div>
+            <h2 style="color: #414141">TECHNOLOGIES FRONT-END</h2>
+            <div class="box_content">
+              <div class="icon_text"><img class="icon" src="images/apropos/html.png" alt="Logo HTML 5"><span>HTML 5</span></div>
+            <div class="icon_text"><img class="icon" src="images/apropos/css.png" alt="Logo CSS 3"><span>CSS 3</span></div>
+            <div class="icon_text"><img class="icon" src="images/apropos/javascript.png" alt="Logo Javascript"><span>Javascript</span></div>
+            <div class="icon_text"><img class="icon" src="images/apropos/vuejs.png" alt="Logo Vue.js"><span>Vue.js</span></div>
+            </div>
+        
           </div>
           <div class="box_back">
-            <h2>TECHNOLOGIES BACK-END</h2>
-            <div class="icon_text"><img class="smaller_icon" src="images/nodejs.svg" alt="Logo node.js"><span>Node.js / Express</span></div>
-            <div class="icon_text"><img class="icon" src="images/mongodb.png" alt="Logo mongodb"><span>MongoDB / Mongoose</span></div>
-            <div class="icon_text"><img class="smaller_icon" src="images/mysql.png" alt="Logo mysql"><span>MySQL / Sequelize / phpMyAdmin</span></div>
+            <h2 style="color: #414141">TECHNOLOGIES BACK-END</h2>
+            <div class="box_content">
+              <div class="icon_text"><img class="smaller_icon" src="images/apropos/nodejs.svg" alt="Logo node.js"><span>Node.js<br/>Express</span></div>
+            <div class="icon_text"><img class="icon" src="images/apropos/mongodb.png" alt="Logo mongodb"><span>MongoDB<br/>Mongoose</span></div>
+            <div class="icon_text"><img class="smaller_icon" src="images/apropos/mysql.png" alt="Logo mysql"><span>MySQL<br/>Sequelize<br/>phpMyAdmin</span></div>
+            </div>
+            
           </div>
           <div class="box_others">
-            <h2>AUTRES</h2>
-            <div class="icon_text"><img class="icon" src="images/github.png" alt="Logo github"><span>GitHub</span></div>
-            <div class="icon_text"><img class="icon" src="images/vscode.png" alt="Logo visual studio code"><span>VS Code</span></div>
-            <div class="icon_text"><img class="icon" src="images/illustrator.png" alt="Logo Adobe Illustrator"><span>Illustrator</span></div>
-            <div class="icon_text"><img class="icon" src="images/photoshop.png" alt="Logo Adobe Photoshop"><span>Photoshop</span></div>
+            <h2 style="color: #414141">AUTRES</h2>
+            <div class="box_content">
+              <div class="icon_text"><img class="icon" src="images/apropos/github.png" alt="Logo github"><span>GitHub</span></div>
+            <div class="icon_text"><img class="icon" src="images/apropos/vscode.png" alt="Logo visual studio code"><span>VS Code</span></div>
+            <div class="icon_text"><img class="icon" src="images/apropos/illustrator.png" alt="Logo Adobe Illustrator"><span>Illustrator</span></div>
+            <div class="icon_text"><img class="icon" src="images/apropos/photoshop.png" alt="Logo Adobe Photoshop"><span>Photoshop</span></div>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -126,11 +176,18 @@ prends garde où tu mets les pieds
      \ (     (_/
       \_)
 -->
-        <h1>Portfolio</h1>
+<div class="banniere_full_width portfolio_ban">
+  <div  class="ban_none"><img src="images/banniere/banniere_portfolio_gauche.svg" alt="Accolade et portfolio 3D"></div>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <h1>PORTFOLIO<br/><br/>
+    </h1>
+  </div>
+  <div class="ban_responsive"><img src="images/banniere/banniere_portfolio_droite.svg" alt="Accolade et portfolio 3D"></div>
+</div>
           <div class="projets">
             <div class="projet">
               <a href="#">
-                  <img src="images/projet_1.jpg" alt="image projet de Formation, transformez votre CV en site Web">   
+                  <img src="images/portfolio/projet_1.jpg" alt="image projet de Formation, transformez votre CV en site Web">   
                   <div class="projets_text">
                     <h3>Projet de Formation<br/> Transformez votre CV en site Web</h3>
                     <div class="theme">
@@ -152,7 +209,7 @@ prends garde où tu mets les pieds
             </div>
             <div class="projet">
               <a href="#">
-                <img src="images/projet_3.jpg" alt="image projet de Formation, réalisez une page web avec des animations CSS">
+                <img src="images/portfolio/projet_3.jpg" alt="image projet de Formation, réalisez une page web avec des animations CSS">
                 <div class="projets_text">
                   <h3>Projet de Formation<br/> Réalisez une page web avec des animations CSS</h3>
                   <div class="theme">
@@ -175,7 +232,7 @@ prends garde où tu mets les pieds
           <div class="projets">
             <div class="projet">
               <a href="https://github.com/Ambre1709/La_chouette_agence" target="_blank">
-                <img src="images/projet_2.jpg" alt="image projet de Formation, optimisez un site Web existant">
+                <img src="images/portfolio/projet_2.jpg" alt="image projet de Formation, optimisez un site Web existant">
                 <div class="projets_text">
                   <h3>Projet de Formation<br/>Optimisez un site Web existant </h3>
                   <div class="theme">
@@ -197,7 +254,7 @@ prends garde où tu mets les pieds
             </div>
             <div class="projet">
               <a href="#">
-                <img src="images/projet_5.jpg" alt="image projet de Formation, construire un site e-commerce">
+                <img src="images/portfolio/projet_5.jpg" alt="image projet de Formation, construire un site e-commerce">
                 <div class="projets_text">
                   <h3>Projet de Formation<br/>Construire un site e-commerce</h3>
                   <div class="theme">
@@ -221,7 +278,7 @@ prends garde où tu mets les pieds
           <div class="projets">
             <div class="projet">
               <a href="#">
-                <img src="images/projet_6.jpg" alt="image projet de Formation, construire une API REST sécurisée">
+                <img src="images/portfolio/projet_6.jpg" alt="image projet de Formation, construire une API REST sécurisée">
                 <div class="projets_text">
                   <h3>Projet de Formation<br/>Construire une API REST sécurisée pour une application d'avis gastronomiques</h3>
                   <div class="theme">
@@ -245,7 +302,7 @@ prends garde où tu mets les pieds
             </div>
             <div class="projet">
               <a href="#">
-                <img src="images/projet_7.jpg" alt="image projet de Formation, créer un réseau social d’entreprise">
+                <img src="images/portfolio/projet_7.jpg" alt="image projet de Formation, créer un réseau social d’entreprise">
                 <div class="projets_text">
                   <h3>Projet de Formation<br/>Créer un réseau social d’entreprise</h3>
                   <div class="theme">
@@ -269,7 +326,7 @@ prends garde où tu mets les pieds
           <div class="projets">
             <div class="projet">
               <a href="#">
-                <img src="images/rheagency.jpg" alt="création logo Rheagency">
+                <img src="images/portfolio/rheagency.jpg" alt="création logo Rheagency">
                 <div class="projets_text">
                   <h3>Bénévolat<br/>Création de logo et animation</h3>
                   <div class="theme">
@@ -287,18 +344,18 @@ prends garde où tu mets les pieds
               </a>
             </div>
           </div>
+        </section>
+                <!----------------------------------------------------CONTACT-->
+      <section id="contact" class="section">
           <div class="banniere_full_width">
-            <div  class="ban_none"><img src="images/banniere_code_gauche.svg" alt=""></div>
+            <div  class="ban_none"><img src="images/banniere/banniere_code_gauche.svg" alt="Accolade et avion papier 3D"></div>
             <div style="display: flex; justify-content: center; align-items: center;">
               <h1>Vous souhaitez me contacter ?<br/><br/>
-                <div id="down"><a href="#contact"><i class="fas fa-chevron-down"></i></a></div>
               </h1>
             </div>
-            <div class="ban_responsive"><img src="images/banniere_code_droite.svg" alt=""></div>
+            <div class="ban_responsive"><img src="images/banniere/banniere_code_droite.svg" alt="Accolade et avion papier 3D"></div>
           </div>
-      </section>
-      <!----------------------------------------------------CONTACT-->
-      <section id="contact" class="section">
+
           <div class="container-form">
             <div class="contactInfo">
               <div>
@@ -354,7 +411,7 @@ prends garde où tu mets les pieds
       </section>
     </div>
     <footer>
-        <p>Vous pouvez me retrouver ici</p>
+        <h4>Vous pouvez me retrouver ici</h4>
         <div class="social-links">
           <span><a href="https://github.com/Ambre1709?tab=repositories" target="_blank"><i class="fab fa-github"></i></a></span>
           <span><a href="https://www.linkedin.com/in/ambre-vanneuville-2034b1149/" target="_blank"><i class="fab fa-linkedin"></i></a></span>   

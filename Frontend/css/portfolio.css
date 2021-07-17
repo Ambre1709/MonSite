@@ -1,7 +1,6 @@
 #portfolio{
     display: flex;
     flex-direction: column;
-    min-height: 150vh;
 }
 .projets{
     display: flex;
@@ -18,7 +17,7 @@
 }
 .langages{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     padding-top: 10px;
 }
@@ -61,7 +60,7 @@
 }
 .projets_text h3{
     background: #f6b20b;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 5px;
     color: #fff;
 }
@@ -75,25 +74,11 @@
     filter: brightness(100%);
 }
 .projets a:hover{
-    filter: brightness(40%);
+    filter: brightness(10%);
 }
 .responsive_text_portfolio{
     display: none;
 }
-.banniere_full_width h1{
-    color: #fff;
-    text-align: center;
-    padding: 40px 0;
-}
-.banniere_full_width{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr; 
-    background-color: #214d62;
-    width: 100vw;
-    padding: 20px 0;
-    margin-top: 200px;
-}
-
 /*responsive*/
 @media screen and (max-width: 1024px) {
     .projets{
@@ -141,25 +126,5 @@
     }
     .sept{
         background: black;
-    }
-    .banniere_full_width{
-        display: flex;
-        flex-direction: column-reverse;
-        padding-bottom: 0;
-        margin-top: 100px;
-    }
-    .banniere_full_width img{
-    width: 30%;
-    min-width: 230px;
-    }
-    .ban_none{
-        display: none;
-    }
-    .ban_responsive{
-        display: flex;
-        justify-content: center;
-    }
-    .banniere_full_width h1 {
-        padding: 20px 0;
     }
 }

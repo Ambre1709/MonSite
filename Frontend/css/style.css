@@ -9,6 +9,9 @@ body{
     font-size: 1rem;
     overflow-x: hidden;/*no scroll horizontal*/
 }
+p{
+    color: #414141;
+}
 /* -----------------------------------------------------------------SECTION*/
 .section{
     display: flex;

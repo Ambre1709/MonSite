@@ -2,7 +2,6 @@
 #contact{
     display: flex;
     flex-direction: column;
-    min-height: 95vh;
 }
 .container-form{
 position: relative;

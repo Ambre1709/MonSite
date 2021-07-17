@@ -134,7 +134,7 @@ margin: 40px;
     color: #f6b20b;
     font-weight: 500;
 }
-.container-form .contactForm .formBox .inputBox input[type="submit"]{
+.container-form .contactForm .formBox .inputBox .envoyer{
     position: relative;
     cursor: pointer;
     background-color: #f6b20b;
@@ -143,8 +143,11 @@ margin: 40px;
     max-width: 150px;
     padding: 15px;
 }
-.container-form .contactForm .formBox .inputBox input[type="submit"]:hover{
+.container-form .contactForm .formBox .inputBox .envoyer:hover{
     background: #3982a3;
+}
+.container-form .contactForm .formBox .inputBox .envoyer i{
+    margin-right: 10px;
 }
 /* -----------------------------------------------------------------RESPONSIVE SECTION CONTACT*/
 @media screen and (max-width: 1500px) {

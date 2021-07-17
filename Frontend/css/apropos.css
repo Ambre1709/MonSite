@@ -51,10 +51,11 @@ box-shadow: 0 20px 25px rgb(0 0 0 / 20%);
     width: 3em;
 }
 /*skills*/
-.box{
+#box{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     padding: 5px;
 }
 .box_content{
@@ -82,20 +83,23 @@ box-shadow: 0 20px 25px rgb(0 0 0 / 20%);
     box-shadow: 0 20px 25px rgb(0 0 0 / 20%);
     }
  
-.box h2{
+#box h2{
     padding-bottom: 20px;
     margin-top: 100px;
     text-align: center;
 }
-.box span{
+#box span{
     margin-top: 10%;
     font-size: 1em;
     font-weight: 550;
 }
 .title_before_skills{
-    background-color: #214d62; 
-    padding: 10px;  
+    display: flex;
+    align-items: center;
+    background-color: #214d62;  
     margin-top: 100px; 
+    width: 100vw;
+    height: 100px;
     color: #fff; 
     text-align: center;
 }
@@ -113,7 +117,7 @@ box-shadow: 0 20px 25px rgb(0 0 0 / 20%);
         height: 150px;
         border: #f6b20b solid 3px;
     }
-    .box span{
+    #box span{
         margin-top: 20%;
     }
 }

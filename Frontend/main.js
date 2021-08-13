@@ -10,7 +10,9 @@ behavior: "smooth"
 }
 scrollToTopBtn.addEventListener("click", scrollToTop)
 
-// ---------------bar de nav, on click
-$(document).on('click', 'ul a', function(){
-    $(this).addClass('active').siblings().removeClass('active')
-})
+// ---------------bar de nav
+function toggle(){
+    var curtain = document.getElementById('curtain');
+    curtain.classList.toggle('active');
+}
+

@@ -18,6 +18,7 @@
     height: 10vh;
 }
 .cv{
+    position: relative;
     cursor: pointer;
     background-color: #214d62;
     color: white;

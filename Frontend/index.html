@@ -23,7 +23,7 @@ prends garde où tu mets les pieds
     <link rel="stylesheet" href="css/apropos.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="stylesheet" href="css/contact.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/navbarr.css" />
     <link rel="stylesheet" href="css/banniere.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <script src="https://kit.fontawesome.com/84c6d20721.js" crossorigin="anonymous"></script>
@@ -40,7 +40,21 @@ prends garde où tu mets les pieds
      \ (     (_/
       \_)
 -->
-    <div id="menu" class="menu">
+<progress max="100" value="0"></progress>
+
+<div id="curtain">
+  <span></span>
+  <span></span>
+  <ul class="ulnav">
+    <li onclick="toggle()"><a href="#accueil">Accueil</a></li>
+    <li onclick="toggle()"><a href="#aPropos">A propos</a></li>
+    <li onclick="toggle()"><a href="#portfolio">Portfolio</a></li>
+    <li onclick="toggle()"><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="toggle" onclick="toggle()"></div>
+</div>
+
+    <!-- <div id="menu" class="menu">
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <div class="line"></div>
@@ -54,10 +68,10 @@ prends garde où tu mets les pieds
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
+    </div> -->
 
     <div class="container">
-<!----------------------------------------------------Accueil-->
+<!--Accueil-->
       <section id="accueil" class="section">
         <div class="accueil_part_top">
         </div>
@@ -86,14 +100,13 @@ prends garde où tu mets les pieds
           <div id="down"><a href="#aPropos"><i class="fas fa-chevron-down"></i></a></div>
         </div>
       </section>
-<!----------------------------------------------------A propos-->
+<!--A propos-->
 <section id="aPropos" class="section">
 
   <div class="banniere_full_width portfolio_ban">
     <div  class="ban_none"><img src="images/banniere/banniere_propos_gauche.svg" alt="Accolade 3D" style="max-height: 265px;"></div>
     <div style="display: flex; justify-content: center; align-items: center;">
-      <h1>À PROPOS<br/><br/>
-      </h1>
+      <h1>À PROPOS<br/><br/></h1>
     </div>
     <div  class="ban_none"><img src="images/banniere/banniere_propos_droite.svg" alt="Accolade 3D" style="max-height: 265px;"></div>
   </div>
@@ -102,7 +115,8 @@ prends garde où tu mets les pieds
               <h3>EN SAVOIR PLUS SUR MOI</h3>
               <p>
                 À la suite de mon baccalauréat Design et Arts appliqués,<br/>
-                j'ai effectué une formation Developpeur Web (+2).
+                J'ai effectué mes premières expériences professionnelles,<br/>
+                à la suite desquelles j'ai obtenu mon diplôme de Développeur Web (+2).
               </p>
               <p>
                 Ayant un goût prononcé pour le WebDesign, j'ai finalement choisi de me spécialiser côté front-end.
@@ -116,13 +130,13 @@ prends garde où tu mets les pieds
             <div class="box_loisirs">
               <h3>LOISIRS & INTERETS</h3>
               <div class="box_content_loisirs">
-                <div>
-                  <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/picto_jeuxvideo.svg" alt="Logo HTML 5"><span>Jeux Vidéo</span></div>
-                  <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/picto_animaux.svg" alt="Logo CSS 3"><span>Animaux</span></div>
-                </div>
-                <div>
-                  <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/picto_photo.svg" alt="Logo Javascript"><span>Photo</span></div>
-                  <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/picto_series.svg" alt="Logo Vue.js"><span>Séries<br/>Films</span></div>
+                <div class="row">
+                  <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/picto_jeuxvideo.svg" alt="Logo jeux vidéo"><span>Jeux Vidéo</span></div>
+                  <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/webdesign.svg" alt="Logo webdesign"><span>WebDesign</span></div>
+                  <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/uxui.svg" alt="Logo ux ui design"><span>UX & UI<br/> Design</span></div>
+                  <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/picto_photo.svg" alt="Logo photo"><span>Photo</span></div>
+                  <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/picto_animaux.svg" alt="Logo Animaux"><span>Animaux</span></div>
+                  <div class="icon_text_loisir"><img class="medium_icon" src="images/apropos/picto_series.svg" alt="Logo films & series"><span>Séries<br/>Films</span></div>
                 </div>
               
               </div>
@@ -131,11 +145,11 @@ prends garde où tu mets les pieds
           <h2 class="title_before_skills"> Retrouvez plus bas les compétences développées à travers mes projets.</h2>
 
         <!-- COMPETENCES -->
-        <div id="box">
+        <div id="box_competences">
           <div class="box_front">
             <h2 style="color: #414141">TECHNOLOGIES FRONT-END</h2>
             <div class="box_content">
-              <div class="icon_text"><img class="icon" src="images/apropos/html.png" alt="Logo HTML 5"><span>HTML 5</span></div>
+            <div class="icon_text"><img class="icon" src="images/apropos/html.png" alt="Logo HTML 5"><span>HTML 5</span></div>
             <div class="icon_text"><img class="icon" src="images/apropos/css.png" alt="Logo CSS 3"><span>CSS 3</span></div>
             <div class="icon_text"><img class="icon" src="images/apropos/javascript.png" alt="Logo Javascript"><span>Javascript</span></div>
             <div class="icon_text"><img class="icon" src="images/apropos/vuejs.png" alt="Logo Vue.js"><span>Vue.js</span></div>
@@ -189,8 +203,8 @@ prends garde où tu mets les pieds
 </div>
           <div class="projets">
             <div class="projet">
-              <a href="#">
-                  <img src="images/portfolio/projet_1.jpg" alt="image projet de Formation, transformez votre CV en site Web">   
+              <a href="https://github.com/Ambre1709/AmbreVanneuville.github.io" target="_blank">
+                  <img src="images/portfolio/projet_1.jpg" alt="projet de Formation, transformez votre CV en site Web">   
                   <div class="projets_text">
                     <h3>Projet de Formation<br/> Transformez votre CV en site Web</h3>
                     <div class="theme">
@@ -211,8 +225,8 @@ prends garde où tu mets les pieds
               </a>
             </div>
             <div class="projet">
-              <a href="#">
-                <img src="images/portfolio/projet_3.jpg" alt="image projet de Formation, réalisez une page web avec des animations CSS">
+              <a href="https://github.com/Ambre1709/P3_Vanneuville_Ambre" target="_blank">
+                <img src="images/portfolio/projet_3.jpg" alt="projet de Formation, réalisez une page web avec des animations CSS">
                 <div class="projets_text">
                   <h3>Projet de Formation<br/> Réalisez une page web avec des animations CSS</h3>
                   <div class="theme">
@@ -235,7 +249,7 @@ prends garde où tu mets les pieds
           <div class="projets">
             <div class="projet">
               <a href="https://github.com/Ambre1709/La_chouette_agence" target="_blank">
-                <img src="images/portfolio/projet_2.jpg" alt="image projet de Formation, optimisez un site Web existant">
+                <img src="images/portfolio/projet_2.jpg" alt="projet de Formation, optimisez un site Web existant">
                 <div class="projets_text">
                   <h3>Projet de Formation<br/>Optimisez un site Web existant </h3>
                   <div class="theme">
@@ -256,8 +270,8 @@ prends garde où tu mets les pieds
               </a>
             </div>
             <div class="projet">
-              <a href="#">
-                <img src="images/portfolio/projet_5.jpg" alt="image projet de Formation, construire un site e-commerce">
+              <a href="https://github.com/Ambre1709/P5_Orinoco" target="_blank">
+                <img src="images/portfolio/projet_5.jpg" alt="projet de Formation, construire un site e-commerce">
                 <div class="projets_text">
                   <h3>Projet de Formation<br/>Construire un site e-commerce</h3>
                   <div class="theme">
@@ -280,8 +294,8 @@ prends garde où tu mets les pieds
           </div>
           <div class="projets">
             <div class="projet">
-              <a href="#">
-                <img src="images/portfolio/projet_6.jpg" alt="image projet de Formation, construire une API REST sécurisée">
+              <a href="https://github.com/Ambre1709/P6_projet" target="_blank">
+                <img src="images/portfolio/projet_6.jpg" alt=" projet de Formation, construire une API REST sécurisée">
                 <div class="projets_text">
                   <h3>Projet de Formation<br/>Construire une API REST sécurisée pour une application d'avis gastronomiques</h3>
                   <div class="theme">
@@ -304,8 +318,8 @@ prends garde où tu mets les pieds
               </a>
             </div>
             <div class="projet">
-              <a href="#">
-                <img src="images/portfolio/projet_7.jpg" alt="image projet de Formation, créer un réseau social d’entreprise">
+              <a href="https://github.com/Ambre1709/Projet_Final" target="_blank">
+                <img src="images/portfolio/projet_7.jpg" alt=" projet de Formation, créer un réseau social d’entreprise">
                 <div class="projets_text">
                   <h3>Projet de Formation<br/>Créer un réseau social d’entreprise</h3>
                   <div class="theme">
@@ -328,7 +342,7 @@ prends garde où tu mets les pieds
           </div>
           <div class="projets">
             <div class="projet">
-              <a href="#">
+              <a href="https://www.linkedin.com/company/rheagency/" target="_blank">
                 <img src="images/portfolio/rheagency.jpg" alt="création logo Rheagency">
                 <div class="projets_text">
                   <h3>Bénévolat<br/>Création de logo et animation</h3>
@@ -348,7 +362,7 @@ prends garde où tu mets les pieds
             </div>
           </div>
         </section>
-                <!----------------------------------------------------CONTACT-->
+                <!--CONTACT-->
                 <div style="height: 200px;"></div>
       <section id="contact" class="section">
           <div class="banniere_full_width portfolio_ban">
@@ -388,27 +402,29 @@ prends garde où tu mets les pieds
           </div>
             <div class="contactForm">
               <h2>Envoyer un message</h2>
-              <div class="formBox">
-                <div class="inputBox w50">
-                  <input type="text" required>
-                  <span>Prénom</span>
+              <form action="https://formsubmit.co/ambre.vanneuville@gmail.com" method="POST">
+                <div class="formBox">
+                  <div class="inputBox w50">
+                    <input type="text" name="prénom" required>
+                    <span>Prénom</span>
+                  </div>
+                  <div class="inputBox w50">
+                    <input type="text" name="nom" required>
+                    <span>Nom</span>
+                  </div>
+                  <div class="inputBox w50">
+                    <input type="email" name="email" required>
+                    <span>Email</span>
+                  </div>
+                  <div class="inputBox w100">
+                    <textarea name="message" required></textarea>
+                    <span>Ici votre message...</span>
+                  </div>
+                  <div class="inputBox w100">
+                    <button class="envoyer" type="submit"><i class="fas fa-paper-plane"></i>Envoyer</button>
+                  </div>
                 </div>
-                <div class="inputBox w50">
-                  <input type="text" required>
-                  <span>Nom</span>
-                </div>
-                <div class="inputBox w50">
-                  <input type="email" required>
-                  <span>Email</span>
-                </div>
-                <div class="inputBox w100">
-                  <textarea required></textarea>
-                  <span>Ici votre message...</span>
-                </div>
-                <div class="inputBox w100">
-                  <button class="envoyer" type="submit"><i class="fas fa-paper-plane"></i>Envoyer</button>
-                </div>
-              </div>
+            </form>
             </div>
           </div>
           <div id="scrollToTopBtn"><i class="fas fa-caret-square-up"></i></div>
@@ -436,6 +452,7 @@ prends garde où tu mets les pieds
       \_)
    -->
     </footer>
+    <script type="text/javascript" src="main.js"></script>
+  
   </body>
-  <script type="text/javascript" src="main.js"></script>
 </html>

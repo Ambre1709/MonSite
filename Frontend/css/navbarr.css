@@ -48,7 +48,7 @@
     transform: rotate(0deg);
 }
 .toggle{
-    position: absolute;
+    position: fixed;
     z-index: 10000;
     top: 5px;
     left: 5px;

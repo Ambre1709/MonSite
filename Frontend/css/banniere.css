@@ -6,6 +6,7 @@
 .banniere_full_width{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr; 
+    text-align: center;
     background-color: #214d62;
     width: 100vw;
     padding: 20px 0;

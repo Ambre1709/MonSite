@@ -197,7 +197,7 @@
         align-items: center;
     }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 720px){
     /*delete animation typing*/
     .title_me h1::after{
         display: none;
@@ -209,6 +209,9 @@
     .title_me h1{
         margin: 0;
         padding-bottom: 50px;
+    }
+    .title_me{
+        justify-content: center;
     }
     .me img{
         position: relative;
